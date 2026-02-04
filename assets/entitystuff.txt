@@ -1,0 +1,135 @@
+{
+    "text": "",
+    "extra": [
+        {
+            "text": "50 Votes Certificate",
+            "strikethrough": false,
+            "obfuscated": false,
+            "bold": false,
+            "italic": true,
+            "underlined": false,
+            "color": "aqua"
+        }
+    ]
+}
+
+[
+    {
+        "text": "",
+        "extra": [
+            {
+                "text": "This certificate is given",
+                "strikethrough": false,
+                "obfuscated": false,
+                "bold": false,
+                "italic": true,
+                "underlined": false,
+                "color": "gold"
+            }
+        ]
+    },
+    {
+        "text": "",
+        "extra": [
+            {
+                "text": "every ",
+                "strikethrough": false,
+                "obfuscated": false,
+                "bold": false,
+                "italic": true,
+                "underlined": false,
+                "color": "gold"
+            },
+            {
+                "text": "4 hours",
+                "italic": true,
+                "color": "dark_purple"
+            },
+            {
+                "text": " of active",
+                "italic": true,
+                "color": "gold"
+            }
+        ]
+    },
+    {
+        "text": "",
+        "extra": [
+            {
+                "text": "playtime on Terra2.",
+                "strikethrough": false,
+                "obfuscated": false,
+                "bold": false,
+                "italic": true,
+                "underlined": false,
+                "color": "gold"
+            }
+        ]
+    }
+]
+
+{
+    "text": "",
+    "extra": [
+        {
+            "text": "Playtime Certificate",
+            "strikethrough": false,
+            "obfuscated": false,
+            "bold": true,
+            "italic": false,
+            "underlined": false,
+            "color": "gold"
+        }
+    ]
+}
+
+
+{
+    "text": "",
+    "extra": [
+        {
+            "text": "T2",
+            "strikethrough": false,
+            "obfuscated": false,
+            "bold": true,
+            "italic": false,
+            "underlined": true,
+            "color": "gold"
+        },
+        {
+            "text": " ",
+            "bold": false,
+            "italic": false,
+            "underlined": false
+        },
+        {
+            "text": "Playtime Certificate",
+            "bold": true,
+            "italic": false,
+            "color": "dark_purple"
+        }
+    ]
+}
+
+{
+    "text": "",
+    "extra": [
+        "𝕱𝖎𝖙𝖈𝖍'𝖘 𝖋𝖗𝖎𝖊𝖉 𝖌𝖍𝖆𝖘𝖙"
+    ]
+}
+
+{
+    "text": "",
+    "extra": [
+        {
+            "text": "Inactivity Ticket",
+            "strikethrough": false,
+            "obfuscated": false,
+            "bold": true,
+            "italic": false,
+            "underlined": false,
+            "color": "gold"
+        }
+    ]
+}
+

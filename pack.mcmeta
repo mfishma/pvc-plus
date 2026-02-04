@@ -1,0 +1,9 @@
+{
+  "pack": {
+    "min_format": 64,
+    "max_format": 999,
+    "supported_formats": { "min_inclusive": 64, "max_inclusive": 999 },
+    "pack_format": 64,
+    "description": "PVC Textures galore"
+  }
+}
