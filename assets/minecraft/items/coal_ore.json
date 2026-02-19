@@ -1,0 +1,39 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "",
+          "extra": [
+            {
+              "text": "Standard ",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": true,
+              "italic": false,
+              "underlined": false,
+              "color": "red"
+            },
+            {
+              "text": "Protection Block",
+              "bold": false,
+              "italic": false,
+              "color": "yellow"
+            }
+          ]
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/protection_coal_ore"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/coal_ore"
+    }
+  }
+}

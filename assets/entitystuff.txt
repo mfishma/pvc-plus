@@ -133,3 +133,679 @@
     ]
 }
 
+SKU clock
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "SKU ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "gold"
+      },
+      {
+         "text": "Timepiece",
+         "bold": true,
+         "italic": false,
+         "color": "dark_blue"
+      }
+   ]
+}
+
+book: 
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "The Big Claim",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "gold"
+      }
+   ]
+}
+
+custom_data
+{
+   "PublicBukkitValues": {
+      "protectionstones:ispsblock": 1
+   }
+}
+
+
+coal claim: (32)
+custom_name
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Large ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "red"
+      },
+      {
+         "text": "Protection Block",
+         "bold": false,
+         "italic": false,
+         "color": "yellow"
+      }
+   ]
+}
+
+lapis_ore (10)
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Mini ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "red"
+      },
+      {
+         "text": "Protection Block",
+         "bold": false,
+         "italic": false,
+         "color": "yellow"
+      }
+   ]
+}
+
+copper_ore (chunk, w/fee)
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Chunk ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "dark_gray"
+      },
+      {
+         "text": "Protection Block",
+         "bold": false,
+         "italic": false,
+         "color": "gray"
+      }
+   ]
+}
+
+nether_gold_ore
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Nether ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "dark_red"
+      },
+      {
+         "text": "Protection Block",
+         "bold": false,
+         "italic": false,
+         "color": "red"
+      }
+   ]
+}
+
+redstone_ore (64)
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Large ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "red"
+      },
+      {
+         "text": "Protection Block",
+         "bold": false,
+         "italic": false,
+         "color": "yellow"
+      }
+   ]
+}
+
+diamond_ore (128)
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Mega ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "aqua"
+      },
+      {
+         "text": "Protection Block",
+         "bold": false,
+         "italic": false,
+         "color": "white"
+      }
+   ]
+}
+
+deepslate_emerald_ore (256)
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Super ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "dark_green"
+      },
+      {
+         "text": "Protection Block",
+         "bold": false,
+         "italic": false,
+         "color": "white"
+      }
+   ]
+}
+
+Nepero
+charcoal
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Nepero",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": true,
+         "underlined": false,
+         "color": "gray"
+      }
+   ]
+}
+
+spawner
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Fauci del Ferra",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "light_purple"
+      }
+   ]
+}
+
+shulker_spawn_egg
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Amazon ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "gold"
+      },
+      {
+         "text": "Delivery",
+         "bold": true,
+         "italic": false,
+         "color": "white"
+      }
+   ]
+}
+
+squid_spawn_egg
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Squidward",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "dark_gray"
+      }
+   ]
+}
+
+book
+Gift cards-- 5, 10, 25, 50. Doubt you can do partial match
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Gift Card 5€",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "gold"
+      }
+   ]
+}
+
+written_book
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Contract",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": true,
+         "color": "gold"
+      }
+   ]
+}
+
+iron_ingot
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Affiliate",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "red"
+      }
+   ]
+}
+
+Sanctuary:
+netherite_pickaxe
+enchantments:
+{
+   "minecraft:mending": 2,
+   "minecraft:efficiency": 8,
+   "minecraft:bane_of_arthropods": 5,
+   "minecraft:smite": 5,
+   "minecraft:fortune": 5,
+   "minecraft:unbreaking": 5
+}
+other version:
+{
+   "minecraft:mending": 2,
+   "minecraft:efficiency": 8,
+   "minecraft:bane_of_arthropods": 5,
+   "minecraft:silk_touch": 1,
+   "minecraft:smite": 5,
+   "minecraft:unbreaking": 5
+}
+custom_name
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Sanctuary",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "red"
+      }
+   ]
+}
+
+
+emerald
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "<<",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "green"
+      },
+      {
+         "text": "Sponsor Token",
+         "bold": true,
+         "italic": false,
+         "color": "yellow"
+      },
+      {
+         "text": ">>",
+         "bold": false,
+         "italic": false,
+         "color": "green"
+      }
+   ]
+}
+
+lime_wool (no custom_data)
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Admin region protection",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "dark_purple"
+      }
+   ]
+}
+
+sunflower
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Make Your Own Token",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "light_purple"
+      }
+   ]
+}
+
+totem_of_undying
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Undying Swiftness",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "red"
+      }
+   ]
+}
+
+chainmail_helmet
+custom_name
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Self-Regenerating Helmet",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "gold"
+      }
+   ]
+}
+enchantments
+{
+   "minecraft:fire_protection": 4,
+   "minecraft:mending": 2,
+   "minecraft:unbreaking": 3,
+   "minecraft:protection": 3
+}
+(there's chestplate, legggins & boots too)
+
+lime_wool
+sharpness 10
+lore:
+[
+   "",
+   {
+      "text": "",
+      "extra": [
+         {
+            "text": "Ask an owner via discord ticket",
+            "strikethrough": false,
+            "obfuscated": false,
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "color": "light_purple"
+         }
+      ]
+   },
+   {
+      "text": "",
+      "extra": [
+         {
+            "text": "to withdraw this item.",
+            "strikethrough": false,
+            "obfuscated": false,
+            "bold": false,
+            "italic": false,
+            "underlined": false,
+            "color": "light_purple"
+         }
+      ]
+   }
+]
+name (multiple levels, but lore is unique)
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Voucher Credits - 150",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "dark_purple"
+      }
+   ]
+}
+
+flint w/sharpness 1
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Voucher Credits Token",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "dark_purple"
+      }
+   ]
+}
+
+paper w/sharpness 1 are individual vouchers
+
+paper banknotes
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Bank",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": true,
+         "underlined": false,
+         "color": "green"
+      },
+      {
+         "text": "-",
+         "italic": true,
+         "color": "yellow"
+      },
+      {
+         "text": "O'",
+         "italic": true,
+         "color": "green"
+      },
+      {
+         "text": "-",
+         "italic": true,
+         "color": "yellow"
+      },
+      {
+         "text": "Note",
+         "italic": true,
+         "color": "green"
+      }
+   ]
+}
+enchantments
+infinity 69
+
+brown_mushroom (helmet)
+{
+   "text": "",
+   "extra": [
+      "Myß"
+   ]
+}
+{
+   "minecraft:aqua_affinity": 1
+}
+
+golden_pickaxe
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "a",
+         "strikethrough": false,
+         "obfuscated": true,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "dark_red"
+      },
+      {
+         "text": "Nerchius PVC",
+         "obfuscated": false,
+         "italic": false,
+         "color": "gold"
+      }
+   ]
+}
+enchantments
+{
+   "minecraft:mending": 5,
+   "minecraft:efficiency": 10,
+   "minecraft:bane_of_arthropods": 10,
+   "minecraft:silk_touch": 1,
+   "minecraft:smite": 10,
+   "minecraft:unbreaking": 10
+}
+
+heart_of_the_sea w/ unbreaking 3
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "$Llama",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "light_purple"
+      },
+      {
+         "text": "Coin",
+         "bold": true,
+         "italic": false,
+         "color": "gold"
+      }
+   ]
+}
+
+sunflower w/efficiency 1
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Event Coin",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "gold"
+      }
+   ]
+}
+
+written_book
+written_book_content
+{
+   "generation": 1,
+   "pages": [
+      {
+         "raw": "BareBones\nTrading Token\n\n*issued 30.01.2026 by .aus3z"
+      }
+   ],
+   "resolved": true,
+   "title": {
+      "raw": "BB Token"
+   },
+   "author": ".aus3z"
+}
+
+book
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Inactivity Certificate",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "gold"
+      }
+   ]
+}

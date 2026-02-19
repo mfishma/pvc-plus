@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "",
+          "extra": [
+            {
+              "text": "Caddozzo",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": true,
+              "italic": true,
+              "underlined": false,
+              "color": "light_purple"
+            }
+          ]
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/caddozzo"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/amethyst_shard"
+    }
+  }
+}

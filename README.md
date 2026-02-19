@@ -1,43 +1,54 @@
-# Minecraft Custom Items Resource Pack
+# PVC+ Resource Pack
 
-A resource pack for Minecraft 1.21.5+ that replaces textures for specific server-side custom items based on their display names.
+A custom resource pack for Minecraft 1.21.5+ that applies custom textures to PVC-specific items based on their display names (NBT data). That means if the name changes, this pack will need to be updated.
 
 ## Features
 
-- **Playtime Certificate** - Custom texture for books named "Playtime Certificate"
-- **50-vote Token** - Custom texture for diamonds named "50-vote token"
--
+### Custom Items
+| Base Item | Trigger Name | Internal Model |
+|-----------|-------------|----------------|
+| **Book** | "Playtime Certificate" | `playtime_cert` |
+| **Book** | "T2 Playtime Certificate" | `playtime_cert_t2` |
+| **Paper** | "Inactivity Ticket" | `part-cert` |
+| **Amethyst Shard** | "Caddozzo" | `caddozzo` |
+| **Diamond** | "50 Votes Certificate" | `vote_token` |
+
+### Custom Blocks
+- **Protection Block** (Coal Ore):
+  - **Trigger**: "Standard Protection Block"
+  - **Model Logic**: Uses `minecraft:block/cube_column` as the parent.
+  - **Rendering**: Preserves the standard Coal Ore texture on the **Top/Bottom** (end) faces, while applying a custom texture to the **Side** faces.
 
 ## Installation
 
-1. Download or clone this repository
-2. Place the folder in your Minecraft `resourcepacks` folder
-3. Enable the resource pack in Minecraft settings
+1. Download the final zip file.
+2. Place the zip file in your Minecraft `resourcepacks` folder.
+3. Enable the resource pack in Minecraft settings.
 
-## Structure
+## File Structure
+
+The pack follows a strict separation between vanilla logic overrides and custom assets.
 
 pvc-plus/
 ├── pack.mcmeta
 ├── pack.png
 └── assets/
-    ├── pvc-plus/               <-- YOUR SAFE SPACE (Models & Textures)
+    ├── pvc-plus/               <-- CUSTOM ASSETS
     │   ├── models/
-    │   │   ├── playtime_certificate.json
-    │   │   └── vote_diamond.json
+    │   │   └── item/           <-- Item Models
+    │   │       ├── playtime_cert.json
+    │   │       ├── playtime_cert_t2.json
+    │   │       ├── part-cert.json
+    │   │       ├── caddozzo.json
+    │   │       ├── vote_token.json
+    │   │       └── protection_coal_ore.json
     │   └── textures/
-    │       ├── certificate.png
-    │       └── vote_diamond.png
-    └── minecraft/              <-- VANILLA OVERRIDES (The Logic)
+    │       ├── item/
+    │       └── block/
+    └── minecraft/              <-- VANILLA LOGIC
         └── items/
-            ├── book.json       <-- Intercepts all books
-            └── diamond.json    <-- Intercepts all diamonds
-
-## Adding More Items
-
-To add custom textures for additional items:
-
-1. Add the ...
-
-## Notes
-
-- 1.21.5+
+            ├── book.json       <-- Checks for Certificates
+            ├── paper.json      <-- Checks for Tickets
+            ├── diamond.json    <-- Checks for Vote Tokens
+            ├── amethyst_shard.json
+            └── coal_ore.json   <-- Checks for Protection Block
