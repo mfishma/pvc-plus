@@ -9,25 +9,31 @@
           "text": "",
           "extra": [
             {
-              "text": "Inactivity Ticket",
+              "text": "Large ",
               "strikethrough": false,
               "obfuscated": false,
               "bold": true,
               "italic": false,
               "underlined": false,
-              "color": "gold"
+              "color": "red"
+            },
+            {
+              "text": "Protection Block",
+              "bold": false,
+              "italic": false,
+              "color": "yellow"
             }
           ]
         },
         "model": {
           "type": "minecraft:model",
-          "model": "pvc-plus:item/afk_ticket"
+          "model": "pvc-plus:item/protection_redstone_ore"
         }
       }
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:item/paper"
+      "model": "minecraft:item/redstone_ore"
     }
   }
 }

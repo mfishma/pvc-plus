@@ -9,15 +9,15 @@ A custom resource pack for Minecraft 1.21.5+ that applies custom textures to PVC
 |-----------|-------------|----------------|
 | **Book** | "Playtime Certificate" | `playtime_cert` |
 | **Book** | "T2 Playtime Certificate" | `playtime_cert_t2` |
-| **Paper** | "Inactivity Ticket" | `part-cert` |
+| **Paper** | "Inactivity Ticket" | `afk_ticket` |
 | **Amethyst Shard** | "Caddozzo" | `caddozzo` |
 | **Diamond** | "50 Votes Certificate" | `vote_token` |
 
 ### Custom Blocks
-- **Protection Block** (Coal Ore):
-  - **Trigger**: "Standard Protection Block"
-  - **Model Logic**: Uses `minecraft:block/cube_column` as the parent.
-  - **Rendering**: Preserves the standard Coal Ore texture on the **Top/Bottom** (end) faces, while applying a custom texture to the **Side** faces.
+- **Protection Block** (Some ore):
+  - **Trigger**: "{size} Protection Block"
+  - **Model Logic**: May use `minecraft:block/cube_column` or custom model json as the parent.
+  - **Rendering**: Can use different model logic so that the standard Ore texture may be rotated on either the **Top/Bottom** (end) faces, while applying a custom texture to the **Side** faces.
 
 ## Installation
 
@@ -38,7 +38,7 @@ pvc-plus/
     │   │   └── item/           <-- Item Models
     │   │       ├── playtime_cert.json
     │   │       ├── playtime_cert_t2.json
-    │   │       ├── part-cert.json
+    │   │       ├── afk_ticket.json
     │   │       ├── caddozzo.json
     │   │       ├── vote_token.json
     │   │       └── protection_coal_ore.json
@@ -51,4 +51,4 @@ pvc-plus/
             ├── paper.json      <-- Checks for Tickets
             ├── diamond.json    <-- Checks for Vote Tokens
             ├── amethyst_shard.json
-            └── coal_ore.json   <-- Checks for Protection Block
+            └── coal_ore.json   <-- Checks for Standard Protection Block

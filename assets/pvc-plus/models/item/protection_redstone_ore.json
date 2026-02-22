@@ -1,6 +1,6 @@
 {
   "parent": "pvc-plus:item/protection_base",
   "textures": {
-    "all": "pvc-plus:item/protection_coal_ore"
+    "all": "pvc-plus:item/protection_redstone_ore"
   }
 }

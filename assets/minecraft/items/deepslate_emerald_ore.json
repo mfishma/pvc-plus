@@ -9,25 +9,31 @@
           "text": "",
           "extra": [
             {
-              "text": "Inactivity Ticket",
+              "text": "Super ",
               "strikethrough": false,
               "obfuscated": false,
               "bold": true,
               "italic": false,
               "underlined": false,
-              "color": "gold"
+              "color": "dark_green"
+            },
+            {
+              "text": "Protection Block",
+              "bold": false,
+              "italic": false,
+              "color": "white"
             }
           ]
         },
         "model": {
           "type": "minecraft:model",
-          "model": "pvc-plus:item/afk_ticket"
+          "model": "pvc-plus:item/protection_deepslate_emerald_ore"
         }
       }
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:item/paper"
+      "model": "minecraft:item/deepslate_emerald_ore"
     }
   }
 }

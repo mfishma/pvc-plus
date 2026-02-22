@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "pvc-plus:item/part-cert"
+    "layer0": "pvc-plus:item/chrono_relic"
   }
 }

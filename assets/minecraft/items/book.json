@@ -54,6 +54,46 @@
           "type": "minecraft:model",
           "model": "pvc-plus:item/playtime_cert_t2"
         }
+      },
+      {
+        "when": {
+          "text": "",
+          "extra": [
+            {
+              "text": "Inactivity Certificate",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": true,
+              "italic": false,
+              "underlined": false,
+              "color": "gold"
+            }
+          ]
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/afk_cert"
+        }
+      },
+      {
+        "when": {
+          "text": "",
+          "extra": [
+            {
+              "text": "The Big Claim",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": true,
+              "italic": false,
+              "underlined": false,
+              "color": "gold"
+            }
+          ]
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/the_big_claim"
+        }
       }
     ],
     "fallback": {
