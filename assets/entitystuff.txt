@@ -1,3 +1,5 @@
+This file is not a proper json file, however it does contain my notes on various things I pasted in while inspecting items I want to re-texture
+
 {
     "text": "",
     "extra": [
@@ -185,7 +187,7 @@ custom_name
    "text": "",
    "extra": [
       {
-         "text": "Large ",
+         "text": "Standard ",
          "strikethrough": false,
          "obfuscated": false,
          "bold": true,
@@ -804,6 +806,22 @@ book
          "obfuscated": false,
          "bold": true,
          "italic": false,
+         "underlined": false,
+         "color": "gold"
+      }
+   ]
+}
+
+cake
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Very good cake (not a lie!)",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": true,
          "underlined": false,
          "color": "gold"
       }

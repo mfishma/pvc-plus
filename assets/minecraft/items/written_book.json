@@ -1,0 +1,32 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:written_book_content",
+    "cases": [
+      {
+        "when": {
+          "generation": 1,
+          "pages": [
+            {
+              "raw": "BareBones\nTrading Token\n\n*issued 30.01.2026 by .aus3z"
+            }
+          ],
+          "resolved": true,
+          "title": {
+            "raw": "BB Token"
+          },
+          "author": ".aus3z"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/barebones_coin"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/written_book"
+    }
+  }
+}

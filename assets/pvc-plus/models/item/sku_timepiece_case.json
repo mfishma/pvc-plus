@@ -1,6 +1,6 @@
 {
 	"format_version": "1.9.0",
-	"credit": "Made with Blockbench",
+	"credit": "Modified with Blockbench, from Pop-out Clocks published by deltomx3",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "pvc-plus:item/clock_case_sku",
@@ -22,10 +22,44 @@
 		}
 	],
 	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 152, 0],
+			"translation": [0, 3, 3.5],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-75, 21, 180],
+			"translation": [0, 2, 4],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [93, -165, 10],
+			"translation": [4.75, 0.75, 4.25]
+		},
+		"firstperson_lefthand": {
+			"rotation": [93, -165, 10],
+			"translation": [4.75, 0.75, 4.25]
+		},
+		"ground": {
+			"rotation": [90, -180, -180],
+			"translation": [0, 2.25, -6.5]
+		},
+		"gui": {
+			"rotation": [90, -180, 0]
+		},
+		"head": {
+			"rotation": [90, -180, -180],
+			"translation": [0, 11.5, -5],
+			"scale": [0.75, 0.75, 0.75]
+		},
 		"fixed": {
 			"rotation": [-90, 0, 0],
 			"translation": [0, 0, -11.72],
 			"scale": [1.72, 1.72, 1.72]
+		},
+		"on_shelf": {
+			"rotation": [90, 180, 0],
+			"translation": [0, 0, 7.5]
 		}
 	},
 	"groups": [
