@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "",
+          "extra": [
+            {
+              "text": "Nepero",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": false,
+              "italic": true,
+              "underlined": false,
+              "color": "gray"
+            }
+          ]
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/nepero"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/charcoal"
+    }
+  }
+}

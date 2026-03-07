@@ -23,6 +23,45 @@
           "type": "minecraft:model",
           "model": "pvc-plus:item/afk_ticket"
         }
+      },
+      {
+        "when": {
+          "extra": [
+            {
+              "text": "Bank",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": false,
+              "italic": true,
+              "underlined": false,
+              "color": "green"
+            },
+            {
+              "text": "-",
+              "italic": true,
+              "color": "yellow"
+            },
+            {
+              "text": "O'",
+              "italic": true,
+              "color": "green"
+            },
+            {
+              "text": "-",
+              "italic": true,
+              "color": "yellow"
+            },
+            {
+              "text": "Note",
+              "italic": true,
+              "color": "green"
+            }
+          ]
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/bank_o_note"
+        }
       }
     ],
     "fallback": {
