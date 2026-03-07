@@ -1,54 +1,47 @@
-# PVC+ Resource Pack
+# PVC-Plus Resource Pack
 
-A custom resource pack for Minecraft 1.21.5+ that applies custom textures to PVC-specific items based on their display names (NBT data). That means if the name changes, this pack will need to be updated.
+A custom resource pack for Minecraft 1.21.5+ that applies custom textures to PVC-specific items based on their display names (NBT data).
 
-## Features
+## Custom Items Catalog
 
-### Custom Items
-| Base Item | Trigger Name | Internal Model |
-|-----------|-------------|----------------|
-| **Book** | "Playtime Certificate" | `playtime_cert` |
-| **Book** | "T2 Playtime Certificate" | `playtime_cert_t2` |
-| **Paper** | "Inactivity Ticket" | `afk_ticket` |
-| **Amethyst Shard** | "Caddozzo" | `caddozzo` |
-| **Diamond** | "50 Votes Certificate" | `vote_token` |
+Below is a complete visual reference of the custom items, showing what vanilla item they replace and what their new texture looks like in-game!
 
-### Custom Blocks
-- **Protection Block** (Some ore):
-  - **Trigger**: "{size} Protection Block"
-  - **Model Logic**: May use `minecraft:block/cube_column` or custom model json as the parent.
-  - **Rendering**: Can use different model logic so that the standard Ore texture may be rotated on either the **Top/Bottom** (end) faces, while applying a custom texture to the **Side** faces.
+| Custom Item                                             |                                                                                        Original Item                                                                                         |     |                                                    New Custom Texture                                                    |
+| :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-: | :----------------------------------------------------------------------------------------------------------------------: |
+| **Caddozzo**<br>_(Amethyst Shard)_                      |        <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/amethyst_shard.png" width="48" title="Amethyst Shard">         |  ➔  |                    <img src="assets/pvc-plus/textures/item/caddozzo.png" width="48" title="Caddozzo">                    |
+| **Very good cake**<br>_(Cake)_                          |                  <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/cake.png" width="48" title="Cake">                   |  ➔  |            <img src="assets/pvc-plus/textures/item/black_forest_cake.png" width="48" title="Very good cake">             |
+| **SKU Timepiece**<br>_(Clock)_                          |                <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/clock_00.png" width="48" title="Clock">                |  ➔  |              <img src="assets/pvc-plus/textures/item/clock_case_sku.png" width="48" title="SKU Timepiece">               |
+| **Standard Protection Block**<br>_(Coal Ore)_           |              <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/block/coal_ore.png" width="48" title="Coal Ore">              |  ➔  |      <img src="assets/pvc-plus/textures/item/protection_coal_ore.png" width="48" title="Standard Protection Block">      |
+| **Chunk Protection Block**<br>_(Copper Ore)_            |            <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/block/copper_ore.png" width="48" title="Copper Ore">            |  ➔  |      <img src="assets/pvc-plus/textures/item/protection_copper_ore.png" width="48" title="Chunk Protection Block">       |
+| **Super Protection Block**<br>_(Deepslate Emerald Ore)_ | <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/block/deepslate_emerald_ore.png" width="48" title="Deepslate Emerald Ore"> |  ➔  | <img src="assets/pvc-plus/textures/item/protection_deepslate_emerald_ore.png" width="48" title="Super Protection Block"> |
+| **50 Votes Certificate**<br>_(Diamond)_                 |               <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/diamond.png" width="48" title="Diamond">                |  ➔  |            <img src="assets/pvc-plus/textures/item/vote_diamond.png" width="48" title="50 Votes Certificate">            |
+| **Mega Protection Block**<br>_(Diamond Ore)_            |           <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/block/diamond_ore.png" width="48" title="Diamond Ore">           |  ➔  |      <img src="assets/pvc-plus/textures/item/protection_diamond_ore.png" width="48" title="Mega Protection Block">       |
+| **$Llama Coin**<br>_(Heart of the Sea)_                 |      <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/heart_of_the_sea.png" width="48" title="Heart of the Sea">       |  ➔  |                 <img src="assets/pvc-plus/textures/item/llama_coin.png" width="48" title="$Llama Coin">                  |
+| **Mini Protection Block**<br>_(Lapis Ore)_              |             <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/block/lapis_ore.png" width="48" title="Lapis Ore">             |  ➔  |       <img src="assets/pvc-plus/textures/item/protection_lapis_ore.png" width="48" title="Mini Protection Block">        |
+| **Nether Protection Block**<br>_(Nether Gold Ore)_      |       <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/block/nether_gold_ore.png" width="48" title="Nether Gold Ore">       |  ➔  |   <img src="assets/pvc-plus/textures/item/protection_nether_gold_ore.png" width="48" title="Nether Protection Block">    |
+| **Large Protection Block**<br>_(Redstone Ore)_          |          <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/block/redstone_ore.png" width="48" title="Redstone Ore">          |  ➔  |     <img src="assets/pvc-plus/textures/item/protection_redstone_ore.png" width="48" title="Large Protection Block">      |
+| **Squidward**<br>_(Squid Spawn Egg)_                    |       <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/squid_spawn_egg.png" width="48" title="Squid Spawn Egg">        |  ➔  |              <img src="assets/pvc-plus/textures/item/squidward_spawn_egg.png" width="48" title="Squidward">              |
+| **Totem of DLJ**<br>_(Totem of Undying)_                |      <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/totem_of_undying.png" width="48" title="Totem of Undying">       |  ➔  |                <img src="assets/pvc-plus/textures/item/totem_of_dlj.png" width="48" title="Totem of DLJ">                |
+| **Totem of Orwell**<br>_(Totem of Undying)_             |      <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/totem_of_undying.png" width="48" title="Totem of Undying">       |  ➔  |             <img src="assets/pvc-plus/textures/item/totem_of_orwell.png" width="48" title="Totem of Orwell">             |
+| **Playtime Certificate**<br>_(Book)_                    |                  <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/book.png" width="48" title="Book">                   |  ➔  |           <img src="assets/pvc-plus/textures/item/playtime_cert.png" width="48" title="Playtime Certificate">            |
+| **T2 Playtime Cert.**<br>_(Book)_                       |                  <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/book.png" width="48" title="Book">                   |  ➔  |        <img src="assets/pvc-plus/textures/item/playtime_cert_t2.png" width="48" title="T2 Playtime Certificate">         |
+| **The Big Claim**<br>_(Book)_                           |                  <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/book.png" width="48" title="Book">                   |  ➔  |               <img src="assets/pvc-plus/textures/item/the_big_claim.png" width="48" title="The Big Claim">               |
+| **BB Token**<br>_(Written Book)_                        |          <img src="https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.10/assets/minecraft/textures/item/written_book.png" width="48" title="Written Book">           |  ➔  |                 <img src="assets/pvc-plus/textures/item/barebones_coin.png" width="48" title="BB Token">                 |
+
+---
+
+_Note: Any images or textures referenced are pulled relatively from the standard resource pack architecture. If changes are made to the items, the images will automatically update on this preview if they share the same filename!_
 
 ## Installation
 
-1. Download the final zip file.
+1. Download the compiled zip folder (usually excluded from `README.md`).
 2. Place the zip file in your Minecraft `resourcepacks` folder.
 3. Enable the resource pack in Minecraft settings.
 
-## File Structure
+## Technical Structure
 
-The pack follows a strict separation between vanilla logic overrides and custom assets.
+The pack follows a strict separation between vanilla logic overrides and custom assets designed to support complex custom model mapping:
 
-pvc-plus/
-├── pack.mcmeta
-├── pack.png
-└── assets/
-    ├── pvc-plus/               <-- CUSTOM ASSETS
-    │   ├── models/
-    │   │   └── item/           <-- Item Models
-    │   │       ├── playtime_cert.json
-    │   │       ├── playtime_cert_t2.json
-    │   │       ├── afk_ticket.json
-    │   │       ├── caddozzo.json
-    │   │       ├── vote_token.json
-    │   │       └── protection_coal_ore.json
-    │   └── textures/
-    │       ├── item/
-    │       └── block/
-    └── minecraft/              <-- VANILLA LOGIC
-        └── items/
-            ├── book.json       <-- Checks for Certificates
-            ├── paper.json      <-- Checks for Tickets
-            ├── diamond.json    <-- Checks for Vote Tokens
-            ├── amethyst_shard.json
-            └── coal_ore.json   <-- Checks for Standard Protection Block
+- **`assets/minecraft/items/*.json`**: Vanilla Item Model Logic that hijacks the original item and checks the name.
+- **`assets/pvc-plus/models/item/*.json`**: Custom Item Models that are used by the Vanilla Item Model Logic, usually named for their in-game name.
+- **`assets/pvc-plus/textures/item/`**: Project-specific visual texture assets, usually named for what they look like.
