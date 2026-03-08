@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "pvc-plus:item/orewellonote"
+    "layer0": "pvc-plus:item/orwellonote"
   }
 }
