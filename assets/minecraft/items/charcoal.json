@@ -23,6 +23,32 @@
           "type": "minecraft:model",
           "model": "pvc-plus:item/nepero"
         }
+      },
+      {
+        "when": {
+          "text": "",
+          "extra": [
+            {
+              "text": "Quarry Extractor ",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": true,
+              "italic": true,
+              "underlined": false,
+              "color": "dark_purple"
+            },
+            {
+              "text": "Fuel",
+              "bold": false,
+              "italic": true,
+              "color": "light_purple"
+            }
+          ]
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/quarry_extractor_fuel"
+        }
       }
     ],
     "fallback": {
