@@ -33,7 +33,7 @@
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:item/coal_ore"
+      "model": "minecraft:block/coal_ore"
     }
   }
 }

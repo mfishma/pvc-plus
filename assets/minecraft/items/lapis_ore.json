@@ -33,7 +33,7 @@
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:item/lapis_ore"
+      "model": "minecraft:block/lapis_ore"
     }
   }
 }

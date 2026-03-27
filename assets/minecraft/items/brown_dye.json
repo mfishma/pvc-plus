@@ -1,0 +1,40 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when":{
+   "text": "",
+   "extra": [
+      {
+         "text": "Nerchius ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "gold"
+      },
+      {
+         "text": "Poop",
+         "bold": false,
+         "italic": false,
+         "underlined": true,
+         "color": "yellow"
+      }
+   ]
+},
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/nerchius_poop"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/brown_dye"
+    }
+  } 
+}

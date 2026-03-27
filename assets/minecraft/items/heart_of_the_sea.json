@@ -6,24 +6,24 @@
     "cases": [
       {
         "when": {
-   "text": "",
-   "extra": [
-      {
-         "text": "$Llama",
-         "strikethrough": false,
-         "obfuscated": false,
-         "bold": true,
-         "italic": false,
-         "underlined": false,
-         "color": "light_purple"
-      },
-      {
-         "text": "Coin",
-         "bold": true,
-         "italic": false,
-         "color": "gold"
-      }
-   ]
+          "text": "",
+          "extra": [
+            {
+              "text": "$Llama",
+              "strikethrough": false,
+              "obfuscated": false,
+              "bold": true,
+              "italic": false,
+              "underlined": false,
+              "color": "light_purple"
+            },
+            {
+              "text": "Coin",
+              "bold": true,
+              "italic": false,
+              "color": "gold"
+            }
+          ]
         },
         "model": {
           "type": "minecraft:model",

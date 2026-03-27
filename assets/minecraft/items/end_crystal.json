@@ -9,31 +9,31 @@
           "text": "",
           "extra": [
             {
-              "text": "Mega ",
+              "text": "BB ",
               "strikethrough": false,
               "obfuscated": false,
               "bold": true,
               "italic": false,
               "underlined": false,
-              "color": "aqua"
+              "color": "gold"
             },
             {
-              "text": "Protection Block",
-              "bold": false,
+              "text": "Coin",
+              "bold": true,
               "italic": false,
-              "color": "white"
+              "color": "green"
             }
           ]
         },
         "model": {
           "type": "minecraft:model",
-          "model": "pvc-plus:item/protection_diamond_ore"
+          "model": "pvc-plus:item/barebones_coin"
         }
       }
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:block/diamond_ore"
+      "model": "minecraft:item/end_crystal"
     }
   }
 }
