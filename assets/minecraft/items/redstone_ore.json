@@ -33,7 +33,7 @@
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "minecraft:item/redstone_ore"
+      "model": "minecraft:block/redstone_ore"
     }
   }
 }
