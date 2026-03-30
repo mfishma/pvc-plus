@@ -829,3 +829,118 @@ cake
 }
 
 charcoal
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Quarry Extractor ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": true,
+         "underlined": false,
+         "color": "dark_purple"
+      },
+      {
+         "text": "Fuel",
+         "bold": false,
+         "italic": true,
+         "color": "light_purple"
+      }
+   ]
+}
+totem_of_undying
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Undying Swiftness",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "red"
+      }
+   ]
+}
+written_book
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Contract",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": true,
+         "color": "gold"
+      }
+   ]
+}
+emerald
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "<<",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "green"
+      },
+      {
+         "text": "Sponsor Token",
+         "bold": true,
+         "italic": false,
+         "color": "yellow"
+      },
+      {
+         "text": ">>",
+         "bold": false,
+         "italic": false,
+         "color": "green"
+      }
+   ]
+}
+
+brown dye
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Nerchius poop",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": false,
+         "italic": false,
+         "underlined": false,
+         "color": "yellow"
+      }
+   ]
+}
+
+{
+   "text": "",
+   "extra": [
+      {
+         "text": "Nerchius ",
+         "strikethrough": false,
+         "obfuscated": false,
+         "bold": true,
+         "italic": false,
+         "underlined": false,
+         "color": "gold"
+      },
+      {
+         "text": "Poop",
+         "bold": false,
+         "italic": false,
+         "underlined": true,
+         "color": "yellow"
+      }
+   ]
+}
