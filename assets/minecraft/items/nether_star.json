@@ -1,0 +1,49 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:enchantments",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:enchantments",
+      "cases": [
+        {
+          "when": {
+            "levels": {
+              "minecraft:fire_aspect": 3,
+              "minecraft:knockback": 3,
+              "minecraft:feather_falling": 3
+            }
+          },
+          "model": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/vanguard"
+          }
+        },
+        {
+          "when": {
+            "levels": {
+              "minecraft:fire_aspect": 3,
+              "minecraft:knockback": 3,
+              "minecraft:feather_falling": 3
+            },
+            "show_in_tooltip": true
+          },
+          "model": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/vanguard"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/nether_star"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/nether_star"
+    }
+  }
+}
