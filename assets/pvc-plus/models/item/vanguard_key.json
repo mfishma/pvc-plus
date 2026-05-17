@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "pvc-plus:item/vanguard"
+    "layer0": "pvc-plus:item/vanguard_key"
   }
 }
