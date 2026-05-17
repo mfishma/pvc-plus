@@ -2,6 +2,9 @@
 	"format_version": "1.9.0",
 	"credit": "Modified with Blockbench, from Pop-out Clocks published by deltomx3",
 	"texture_size": [32, 32],
+	"textures": {
+		"particle": "#0"
+	},
 	"elements": [
 		{
 			"from": [1, 0, 1],
