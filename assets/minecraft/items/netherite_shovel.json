@@ -1,0 +1,53 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:enchantments",
+    "value": [
+      {
+        "enchantments": ["minecraft:unbreaking"],
+        "levels": { "min": 5 }
+      },
+      {
+        "enchantments": ["minecraft:efficiency"],
+        "levels": { "min": 8 }
+      }
+    ],
+    "on_true": {
+      "type": "minecraft:condition",
+      "property": "minecraft:component",
+      "predicate": "minecraft:enchantments",
+      "value": [
+        {
+          "enchantments": ["minecraft:fortune"]
+        }
+      ],
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "pvc-plus:item/vote_fortune_shovel"
+      },
+      "on_false": {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": ["minecraft:silk_touch"]
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/vote_silk_shovel"
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/netherite_shovel"
+        }
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_shovel"
+    }
+  }
+}

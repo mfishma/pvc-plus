@@ -1,0 +1,13 @@
+{
+    id: "pvcPlus",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        serverCurrency: true,
+        playerCurrency: true,
+        totems: true,
+        protectionBlocks: true,
+        voteItems: true,
+        misc: true
+    }
+}
