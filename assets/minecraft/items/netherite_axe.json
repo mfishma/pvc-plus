@@ -1,0 +1,57 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:enchantments",
+    "value": [
+      {
+        "enchantments": ["minecraft:unbreaking"],
+        "levels": { "min": 6 }
+      },
+      {
+        "enchantments": ["minecraft:bane_of_arthropods"],
+        "levels": { "min": 8 }
+      },
+      {
+        "enchantments": ["minecraft:efficiency"],
+        "levels": { "min": 8 }
+      }
+    ],
+    "on_true": {
+      "type": "minecraft:condition",
+      "property": "minecraft:component",
+      "predicate": "minecraft:enchantments",
+      "value": [
+        {
+          "enchantments": ["minecraft:fortune"]
+        }
+      ],
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "pvc-plus:item/vote_fortune_axe"
+      },
+      "on_false": {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": ["minecraft:silk_touch"]
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/vote_silk_axe"
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/netherite_axe"
+        }
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_axe"
+    }
+  }
+}
