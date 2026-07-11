@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:enchantments",
+    "value": [
+      {
+        "enchantments": ["minecraft:sharpness"],
+        "levels": { "min": 9 }
+      },
+      {
+        "enchantments": ["minecraft:smite"],
+        "levels": { "min": 8 }
+      },
+      {
+        "enchantments": ["minecraft:looting"],
+        "levels": { "min": 5 }
+      },
+      {
+        "enchantments": ["minecraft:unbreaking"],
+        "levels": { "min": 5 }
+      }
+    ],
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "pvc-plus:item/vote_sword"
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_sword"
+    }
+  }
+}

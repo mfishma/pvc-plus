@@ -1,0 +1,15 @@
+{
+    "rpo.pvcPlus": "PVC+",
+    "rpo.pvcPlus.serverCurrency": "Server currency",
+    "rpo.pvcPlus.serverCurrency.tooltip": "Custom textures for economy items: certs, Caddozzo, Nepero, Quarry Fuel, Lux, Vanguard Key, etc.",
+    "rpo.pvcPlus.playerCurrency": "Player currency",
+    "rpo.pvcPlus.playerCurrency.tooltip": "Custom textures for player coins and cosmetic currency ($Llama Coin, BB Coin, SKU Timepiece)",
+    "rpo.pvcPlus.totems": "Totems",
+    "rpo.pvcPlus.totems.tooltip": "Custom textures for totems. Disabling restores vanilla textures for ALL totems, including unnamed ones.",
+    "rpo.pvcPlus.protectionBlocks": "Protection blocks",
+    "rpo.pvcPlus.protectionBlocks.tooltip": "Custom textures for all protection block tiers",
+    "rpo.pvcPlus.voteItems": "Vote armor & tools",
+    "rpo.pvcPlus.voteItems.tooltip": "Custom textures for vote armor and tools",
+    "rpo.pvcPlus.misc": "Misc",
+    "rpo.pvcPlus.misc.tooltip": "Custom textures for various items like Squidward, Nerchius Poop, and vote reward food"
+}

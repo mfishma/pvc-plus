@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:custom_name",
+    "on_true": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_name",
+      "cases": [
+        {
+          "when": "ValeriaShears",
+          "model": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/valeria_shears"
+          }
+        },
+        {
+          "when": {
+            "text": "",
+            "extra": [
+              "ValeriaShears"
+            ]
+          },
+          "model": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/valeria_shears"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/shears"
+      }
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/shears"
+    }
+  }
+}
