@@ -3,7 +3,7 @@
     "rpo.pvcPlus.serverCurrency": "Server currency",
     "rpo.pvcPlus.serverCurrency.tooltip": "Custom textures for economy items: certs, Caddozzo, Nepero, Quarry Fuel, Lux, Vanguard Key, etc.",
     "rpo.pvcPlus.playerCurrency": "Player currency",
-    "rpo.pvcPlus.playerCurrency.tooltip": "Custom textures for player coins and cosmetic currency ($Llama Coin, BB Coin, SKU Timepiece)",
+    "rpo.pvcPlus.playerCurrency.tooltip": "Custom textures for player coins and cosmetic currency ($Llama Coin, BB Coin, etc.)",
     "rpo.pvcPlus.totems": "Totems",
     "rpo.pvcPlus.totems.tooltip": "Custom textures for totems. Disabling restores vanilla textures for ALL totems, including unnamed ones.",
     "rpo.pvcPlus.protectionBlocks": "Protection blocks",

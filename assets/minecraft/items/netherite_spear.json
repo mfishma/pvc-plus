@@ -1,0 +1,211 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "when": [
+          "gui",
+          "ground",
+          "fixed",
+          "on_shelf"
+        ],
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": ["minecraft:lunge"],
+              "levels": { "min": 5 }
+            },
+            {
+              "enchantments": ["minecraft:unbreaking"],
+              "levels": { "min": 5 }
+            },
+            {
+              "enchantments": ["minecraft:sharpness"],
+              "levels": { "min": 7 }
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/vote_spear"
+          },
+          "on_false": {
+            "type": "minecraft:condition",
+            "property": "minecraft:has_component",
+            "component": "minecraft:custom_name",
+            "on_true": {
+              "type": "minecraft:select",
+              "property": "minecraft:component",
+              "component": "minecraft:custom_name",
+              "cases": [
+                {
+                  "when": "Pila del Pretoriano",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "pvc-plus:item/vote_spear"
+                  }
+                },
+                {
+                  "when": {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "Pila del Pretoriano",
+                        "color": "red",
+                        "bold": false,
+                        "italic": false,
+                        "underlined": false,
+                        "strikethrough": false,
+                        "obfuscated": false
+                      }
+                    ]
+                  },
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "pvc-plus:item/vote_spear"
+                  }
+                },
+                {
+                  "when": "Neptune",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "pvc-plus:item/vote_spear"
+                  }
+                },
+                {
+                  "when": {
+                    "text": "",
+                    "extra": [
+                      {
+                        "text": "Neptune",
+                        "strikethrough": false,
+                        "obfuscated": false,
+                        "bold": false,
+                        "italic": false,
+                        "underlined": false,
+                        "color": "aqua"
+                      }
+                    ]
+                  },
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "pvc-plus:item/vote_spear"
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "minecraft:item/netherite_spear"
+              }
+            },
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/netherite_spear"
+            }
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "property": "minecraft:component",
+      "predicate": "minecraft:enchantments",
+      "value": [
+        {
+          "enchantments": ["minecraft:lunge"],
+          "levels": { "min": 5 }
+        },
+        {
+          "enchantments": ["minecraft:unbreaking"],
+          "levels": { "min": 5 }
+        },
+        {
+          "enchantments": ["minecraft:sharpness"],
+          "levels": { "min": 7 }
+        }
+      ],
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "pvc-plus:item/vote_spear_in_hand"
+      },
+      "on_false": {
+        "type": "minecraft:condition",
+        "property": "minecraft:has_component",
+        "component": "minecraft:custom_name",
+        "on_true": {
+          "type": "minecraft:select",
+          "property": "minecraft:component",
+          "component": "minecraft:custom_name",
+          "cases": [
+            {
+              "when": "Pila del Pretoriano",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvc-plus:item/vote_spear_in_hand"
+              }
+            },
+            {
+              "when": {
+                "text": "",
+                "extra": [
+                  {
+                    "text": "Pila del Pretoriano",
+                    "color": "red",
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "strikethrough": false,
+                    "obfuscated": false
+                  }
+                ]
+              },
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvc-plus:item/vote_spear_in_hand"
+              }
+            },
+            {
+              "when": "Neptune",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvc-plus:item/vote_spear_in_hand"
+              }
+            },
+            {
+              "when": {
+                "text": "",
+                "extra": [
+                  {
+                    "text": "Neptune",
+                    "strikethrough": false,
+                    "obfuscated": false,
+                    "bold": false,
+                    "italic": false,
+                    "underlined": false,
+                    "color": "aqua"
+                  }
+                ]
+              },
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvc-plus:item/vote_spear_in_hand"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/netherite_spear_in_hand"
+          }
+        },
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/netherite_spear_in_hand"
+        }
+      }
+    },
+    "property": "minecraft:display_context"
+  },
+  "swap_animation_scale": 1.95
+}
