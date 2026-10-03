@@ -1,0 +1,72 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:map_id",
+    "cases": [
+      {
+        "when": 20876,
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/pvc_logo_filled_map"
+        }
+      },
+      {
+        "when": 29486,
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/map_jimothy"
+        }
+      },
+      {
+        "when": 29488,
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/map_jimothy"
+        }
+      },
+      {
+        "when": 29492,
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/map_jimothy"
+        }
+      },
+      {
+        "when": 29494,
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/map_jimothy"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_name",
+      "cases": [
+        {
+          "when": "PVC Logo",
+          "model": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/pvc_logo_filled_map"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/filled_map",
+        "tints": [
+          {
+            "type": "minecraft:constant",
+            "value": -1
+          },
+          {
+            "type": "minecraft:map_color",
+            "default": 4603950
+          }
+        ]
+      }
+    }
+  }
+}

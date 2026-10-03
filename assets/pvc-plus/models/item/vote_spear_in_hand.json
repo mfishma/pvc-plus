@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/spear_in_hand",
+  "textures": {
+    "layer0": "pvc-plus:item/vote_spear_in_hand"
+  }
+}
