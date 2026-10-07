@@ -41,13 +41,6 @@
               "component": "minecraft:custom_name",
               "cases": [
                 {
-                  "when": "Pila del Pretoriano",
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "pvc-plus:item/vote_spear"
-                  }
-                },
-                {
                   "when": {
                     "text": "",
                     "extra": [
@@ -59,33 +52,6 @@
                         "underlined": false,
                         "strikethrough": false,
                         "obfuscated": false
-                      }
-                    ]
-                  },
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "pvc-plus:item/vote_spear"
-                  }
-                },
-                {
-                  "when": "Neptune",
-                  "model": {
-                    "type": "minecraft:model",
-                    "model": "pvc-plus:item/vote_spear"
-                  }
-                },
-                {
-                  "when": {
-                    "text": "",
-                    "extra": [
-                      {
-                        "text": "Neptune",
-                        "strikethrough": false,
-                        "obfuscated": false,
-                        "bold": false,
-                        "italic": false,
-                        "underlined": false,
-                        "color": "aqua"
                       }
                     ]
                   },
@@ -140,13 +106,6 @@
           "component": "minecraft:custom_name",
           "cases": [
             {
-              "when": "Pila del Pretoriano",
-              "model": {
-                "type": "minecraft:model",
-                "model": "pvc-plus:item/vote_spear_in_hand"
-              }
-            },
-            {
               "when": {
                 "text": "",
                 "extra": [
@@ -158,33 +117,6 @@
                     "underlined": false,
                     "strikethrough": false,
                     "obfuscated": false
-                  }
-                ]
-              },
-              "model": {
-                "type": "minecraft:model",
-                "model": "pvc-plus:item/vote_spear_in_hand"
-              }
-            },
-            {
-              "when": "Neptune",
-              "model": {
-                "type": "minecraft:model",
-                "model": "pvc-plus:item/vote_spear_in_hand"
-              }
-            },
-            {
-              "when": {
-                "text": "",
-                "extra": [
-                  {
-                    "text": "Neptune",
-                    "strikethrough": false,
-                    "obfuscated": false,
-                    "bold": false,
-                    "italic": false,
-                    "underlined": false,
-                    "color": "aqua"
                   }
                 ]
               },
