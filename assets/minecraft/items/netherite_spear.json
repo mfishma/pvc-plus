@@ -41,6 +41,13 @@
               "component": "minecraft:custom_name",
               "cases": [
                 {
+                  "when": "Pila del Pretoriano",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "pvc-plus:item/vote_spear"
+                  }
+                },
+                {
                   "when": {
                     "text": "",
                     "extra": [
@@ -105,6 +112,13 @@
           "property": "minecraft:component",
           "component": "minecraft:custom_name",
           "cases": [
+            {
+              "when": "Pila del Pretoriano",
+              "model": {
+                "type": "minecraft:model",
+                "model": "pvc-plus:item/vote_spear_in_hand"
+              }
+            },
             {
               "when": {
                 "text": "",
