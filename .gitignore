@@ -2,3 +2,4 @@
 GEMINI.md
 .vscode
 *.txt
+__pycache__/

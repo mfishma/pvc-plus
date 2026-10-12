@@ -1,0 +1,21 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:enchantments",
+    "value": [
+      {
+        "enchantments": ["minecraft:vanishing_curse"],
+        "levels": { "min": 1 }
+      }
+    ],
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "pvc-plus:item/bulging_emerald"
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/emerald"
+    }
+  }
+}
