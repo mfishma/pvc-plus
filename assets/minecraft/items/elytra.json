@@ -1,0 +1,41 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:broken",
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/broken_elytra"
+    },
+    "on_false": {
+      "type": "minecraft:condition",
+      "property": "minecraft:component",
+      "predicate": "minecraft:enchantments",
+      "value": [
+        {
+          "enchantments": ["minecraft:unbreaking"],
+          "levels": 5
+        },
+        {
+          "enchantments": ["minecraft:fire_protection"],
+          "levels": 3
+        },
+        {
+          "enchantments": ["minecraft:blast_protection"],
+          "levels": 3
+        },
+        {
+          "enchantments": ["minecraft:protection"],
+          "levels": 3
+        }
+      ],
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "pvc-plus:item/bb_elytra"
+      },
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/elytra"
+      }
+    }
+  }
+}

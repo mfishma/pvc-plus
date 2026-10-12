@@ -1,0 +1,8 @@
+{
+	"parent": "pvc-plus:item/template_bulging_gem",
+	"textures": {
+		"gem": "minecraft:block/emerald_block",
+		"band": "pvc-plus:block/lime_band"
+	}
+}
+

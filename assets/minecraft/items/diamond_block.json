@@ -1,0 +1,21 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:component",
+    "predicate": "minecraft:enchantments",
+    "value": [
+      {
+        "enchantments": ["minecraft:density"],
+        "levels": { "min": 10 }
+      }
+    ],
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "pvc-plus:item/bulging_diamond"
+    },
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "minecraft:block/diamond_block"
+    }
+  }
+}

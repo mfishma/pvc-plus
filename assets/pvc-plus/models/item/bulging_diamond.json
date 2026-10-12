@@ -1,0 +1,7 @@
+{
+	"parent": "pvc-plus:item/template_bulging_gem",
+	"textures": {
+		"gem": "minecraft:block/diamond_block",
+		"band": "pvc-plus:block/orange_band"
+	}
+}
