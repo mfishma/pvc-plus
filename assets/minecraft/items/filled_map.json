@@ -38,6 +38,13 @@
           "type": "minecraft:model",
           "model": "pvc-plus:item/map_jimothy"
         }
+      },
+      {
+        "when": 29992,
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/map_fih"
+        }
       }
     ],
     "fallback": {

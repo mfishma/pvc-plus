@@ -1,0 +1,49 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:enchantments",
+    "cases": [
+      {
+        "when": {
+          "minecraft:unbreaking": 1
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/trick-or-treat-coin"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:select",
+      "property": "minecraft:component",
+      "component": "minecraft:custom_name",
+      "cases": [
+        {
+          "when": {
+            "text": "",
+            "extra": [
+              {
+                "text": "Trick or Treat Coin",
+                "bold": true,
+                "color": "gold",
+                "italic": false,
+                "underlined": false,
+                "strikethrough": false,
+                "obfuscated": false
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/trick-or-treat-coin"
+          }
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:block/jack_o_lantern"
+      }
+    }
+  }
+}

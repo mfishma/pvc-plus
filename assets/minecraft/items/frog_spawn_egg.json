@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "select",
+    "property": "component",
+    "component": "entity_data",
+    "cases": [
+      {
+        "when": {
+          "id": "frog",
+          "variant": "cold"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/cold_frog_spawn_egg"
+        }
+      },
+      {
+        "when": {
+          "id": "frog",
+          "variant": "warm"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "pvc-plus:item/warm_frog_spawn_egg"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/frog_spawn_egg"
+    }
+  }
+}

@@ -4,35 +4,77 @@
     "property": "minecraft:broken",
     "on_true": {
       "type": "minecraft:model",
-      "model": "minecraft:item/broken_elytra"
+      "model": "minecraft:item/elytra_broken"
     },
     "on_false": {
-      "type": "minecraft:condition",
+      "type": "minecraft:select",
       "property": "minecraft:component",
-      "predicate": "minecraft:enchantments",
-      "value": [
+      "component": "minecraft:custom_name",
+      "cases": [
         {
-          "enchantments": ["minecraft:unbreaking"],
-          "levels": 5
-        },
-        {
-          "enchantments": ["minecraft:fire_protection"],
-          "levels": 3
-        },
-        {
-          "enchantments": ["minecraft:blast_protection"],
-          "levels": 3
-        },
-        {
-          "enchantments": ["minecraft:protection"],
-          "levels": 3
+          "when": {
+            "text": "",
+            "extra": [
+              {
+                "text": "◆ ",
+                "strikethrough": false,
+                "obfuscated": false,
+                "bold": true,
+                "italic": false,
+                "underlined": false,
+                "color": "aqua"
+              },
+              {
+                "text": "✦ ",
+                "bold": true,
+                "italic": false,
+                "color": "dark_aqua"
+              },
+              {
+                "text": "B",
+                "bold": true,
+                "italic": false,
+                "color": "gold"
+              },
+              {
+                "text": "are",
+                "bold": true,
+                "italic": false,
+                "color": "dark_blue"
+              },
+              {
+                "text": "B",
+                "bold": true,
+                "italic": false,
+                "color": "gold"
+              },
+              {
+                "text": "ones Wings ",
+                "bold": true,
+                "italic": false,
+                "color": "dark_blue"
+              },
+              {
+                "text": "✦ ",
+                "bold": true,
+                "italic": false,
+                "color": "dark_aqua"
+              },
+              {
+                "text": "◆",
+                "bold": true,
+                "italic": false,
+                "color": "aqua"
+              }
+            ]
+          },
+          "model": {
+            "type": "minecraft:model",
+            "model": "pvc-plus:item/bb_elytra"
+          }
         }
       ],
-      "on_true": {
-        "type": "minecraft:model",
-        "model": "pvc-plus:item/bb_elytra"
-      },
-      "on_false": {
+      "fallback": {
         "type": "minecraft:model",
         "model": "minecraft:item/elytra"
       }

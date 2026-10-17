@@ -1,0 +1,123 @@
+name: Publish pvc-plus
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version_override:
+        description: 'Manual Version Override (leave blank for automatic YYYY.MM.DD)'
+        required: false
+        default: ''
+      changelog_text:
+        description: 'Changelog / Release Notes (paste markdown here, or leave blank to read changelogs/latest.md)'
+        required: false
+        default: ''
+      version_type:
+        description: 'Release Type'
+        required: true
+        default: 'release'
+        type: choice
+        options:
+          - release
+          - beta
+          - alpha
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Needed to query git tags for CalVer calculation
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Determine CalVer
+        id: versioning
+        run: |
+          if [ -n "${{ inputs.version_override }}" ]; then
+            VERSION="${{ inputs.version_override }}"
+          elif [ -n "${{ github.event.release.tag_name }}" ]; then
+            VERSION="${{ github.event.release.tag_name }}"
+          else
+            TODAY=$(date -u +'%Y.%m.%d')
+            EXISTING=$(git tag -l "v${TODAY}*")
+            if [ -z "$EXISTING" ]; then
+              VERSION="${TODAY}"
+            else
+              COUNT=$(echo "$EXISTING" | wc -l | tr -d ' ')
+              VERSION="${TODAY}.${COUNT}"
+            fi
+          fi
+
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "tag=v${VERSION}" >> $GITHUB_OUTPUT
+          echo "Target Version: ${VERSION}"
+
+      - name: Process Descriptions & Changelog
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          MODRINTH_PROJECT_ID: ${{ secrets.MODRINTH_PROJECT_ID || 'oKsOeGEg' }}
+          CHANGELOG_INPUT: ${{ inputs.changelog_text || github.event.release.body }}
+        run: |
+          mkdir -p build
+          python scripts/sync_listings.py \
+            --version "${{ steps.versioning.outputs.version }}" \
+            --modrinth-id "${MODRINTH_PROJECT_ID}"
+
+      - name: Package Resource Pack Zip
+        id: pack
+        run: |
+          ZIP_NAME="pvc-plus-${{ steps.versioning.outputs.version }}.zip"
+          zip -r "${ZIP_NAME}" \
+            assets \
+            overlay_26_2-legacy \
+            overlay_1_21_10-legacy \
+            pack.mcmeta \
+            pack.png \
+            respackopts.json5 \
+            README.md \
+            LICENSE.md \
+            -x "*.git*" "scripts/*" "changelogs/*" ".agents/*" ".github/*" "build/*"
+
+          echo "zip_file=${ZIP_NAME}" >> $GITHUB_OUTPUT
+
+      - name: Publish to Modrinth & CurseForge
+        uses: Kira-NT/mc-publish@v3
+        with:
+          # CurseForge
+          curseforge-id: ${{ secrets.CURSEFORGE_PROJECT_ID || '1685180' }}
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          curseforge-game-version-filter: releases
+
+          # Modrinth
+          modrinth-id: ${{ secrets.MODRINTH_PROJECT_ID || 'oKsOeGEg' }}
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          modrinth-featured: true
+          modrinth-game-version-filter: releases | snapshots
+
+          # GitHub Release creation (when triggered via workflow_dispatch)
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-tag: ${{ steps.versioning.outputs.tag }}
+
+          # File & Changelog
+          files: ${{ steps.pack.outputs.zip_file }}
+          name: "pvc-plus v${{ steps.versioning.outputs.version }}"
+          version: "${{ steps.versioning.outputs.version }}"
+          version-type: "${{ inputs.version_type || 'release' }}"
+          changelog-file: build/CHANGELOG_RESOLVED.md
+
+          # Metadata & Compatibility
+          loaders: minecraft
+          environment: client
+          game-versions: ">=1.21.5"
+          dependencies: |
+            respackopts(optional){modrinth:respackopts}{curseforge:430090}#(ignore:github)

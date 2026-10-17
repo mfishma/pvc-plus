@@ -97,7 +97,7 @@ categories on or off
 
 ## Installation
 
-1. Download the compiled zip folder (usually excluded from `README.md`).
+1. Download the compiled zip folder.
 2. Place the zip file in your Minecraft `resourcepacks` folder.
 3. Enable the resource pack in Minecraft settings.
 
